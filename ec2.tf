@@ -12,3 +12,12 @@ resource "aws_ebs_volume" "example" {
     Name = "HelloWorld"
   }
 }
+
+resource "aws_ebs_volume" "example2" {
+  availability_zone = "us-east-1a"
+  size              = 6
+
+  tags = {
+    Name = "HelloWorld2"
+  }
+}
